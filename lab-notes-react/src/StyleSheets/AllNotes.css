@@ -1,0 +1,62 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: minmax(200px, auto);
+  }
+
+header {
+    grid-column: 1 / -1;
+    justify-items: center;
+  }
+
+  #new-note {
+    border-radius: 50%;
+    background-color: #E94726;
+    font-size: 80px;
+    grid-column: 3 / 4;
+  }
+  
+  #exit {
+    font-size: 80px;
+    right: 10%;
+    top: 10%;
+  }
+
+  .all-notes-contain {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: minmax(200px, auto);
+    grid-gap: 100px;
+    justify-content: flex-start;
+  }
+  
+.individual-notes { 
+  border: solid 2px;
+  background-color: #F9E8C6;
+  }
+  
+.material-icons {
+  position: absolute;
+  /*pointer-events: none;*/
+}
+
+#delete {
+  margin: 3px;
+  justify-items: flex-end;
+  align-items: end;
+}
+
+#edit {
+  padding: 3px;
+}
+
+.note-title {
+  font-weight: bold;
+  padding: 4px;
+}
+
+.note-description {
+  font-weight: lighter;
+  padding: 10px;
+}
+
