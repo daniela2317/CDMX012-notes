@@ -1,3 +1,4 @@
+import React from 'react'
 import { loginGoogle } from './Lib/Auth.js'; 
 import '../StyleSheets/Login.css';
 import google from './Images/google.png';

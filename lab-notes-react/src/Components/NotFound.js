@@ -1,3 +1,5 @@
+import React from 'react'
+
 export const NotFound = () => {
     // podría meter una imagen para verse más dinámico, darle diseño con css, quitarle el fondo por uno blanco 
     return (
