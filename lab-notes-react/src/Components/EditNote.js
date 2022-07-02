@@ -36,7 +36,7 @@ export const EditNote = () => {
 
     return (
         <div className="notesContainer">
-        <form className="container" onSubmit={updateNotes}>
+        <form className="containerForm" onSubmit={updateNotes}>
             <i class="material-icons" id="cancel" onClick={() =>{navigate(-1)}}>cancel</i>
             <input className="title" type="text" value={originalTitle} onChange={(e) => setOriginalTitle(e.target.value)} /> 
             <input className="note" type="text" name="description" value={originalDescription} onChange={(e) => setOriginalDescription(e.target.value)} /> 
